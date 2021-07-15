@@ -31,21 +31,11 @@
 			margin-bottom: 50px;
 
 		}
-		time {
-			position: absolute;
-			top: 0%;
-			left: 100%;
-			font-size: 30px;
-			color: #00bceb;
-			border-radius: 250px;
-  			background: #FFFFFF;
-  			padding: 20px; 
-		}
 		a {
 			font-size: 30px;
-			color: #FFFFFF;
+			color: #000000;
 			border-radius: 50px;
-  			background: #6ebe4a;
+  			background: #FFFFFF;
   			padding: 20px;
 			text-decoration: none;
 		}
@@ -88,24 +78,4 @@
   </tr>
 </table>
 </body>
-<time OnLoad="document.form1.q.focus();">	
-			    <div class="time" id="time">
-				    <script>
-					    //document.getElementById("main").innerHTML = Date();
-					    function updateClock() {
-						    var m = new Date();
-						    var dateString =
-						      ("0" + m.getHours()).slice(-2) + ":" +
-						      ("0" + m.getMinutes()).slice(-2);
-						
-						    // set the content of the element with the ID time to the formatted string
-						    document.getElementById('time').innerHTML = dateString;
-						    // call this function again in 1000ms
-						    setTimeout(updateClock, 1000);
-					    }
-					    updateClock(); // initial call
-			    	    </script>
-			    </div>  
-		</div>
-	</time>
 </html>
